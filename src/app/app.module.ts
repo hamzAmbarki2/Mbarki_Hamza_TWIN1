@@ -13,6 +13,8 @@ import { ContactModule } from './contact/contact.module';
 import { ProfileModule } from './profile/profile.module';
 import { AproposModule } from './apropos/apropos.module';
 import {FormsModule} from "@angular/forms";
+import { ContainsPipe } from './contains.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {FormsModule} from "@angular/forms";
     ProfileComponent,
     AproposComponent,
     HeaderComponent,
-    ListCategoriesComponent
+    ListCategoriesComponent,
+    ContainsPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

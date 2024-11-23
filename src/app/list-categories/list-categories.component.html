@@ -16,7 +16,8 @@
     <div
       class="col-md-4"
       style="margin-bottom: 20px;"
-      *ngFor="let categorie of categories"
+      *ngFor="let categorie of categories | contains:title.value"
+
     >
       <!-- Application de la condition avec *ngIf -->
       <div *ngIf="titre == '' || categorie.title.toLowerCase().includes(titre.toLowerCase())">
